@@ -13,6 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-block: 2rem;  
+    overflow-x: hidden;
 }
 .container  h1{
     font-weight: 700;
@@ -41,6 +42,9 @@ body{
     outline: none;
     font-weight: 600;
     color: rgb(71, 70, 70);
+}
+::-webkit-input-placeholder{
+    text-align: center;
 }
 #addbtn{
     width: 20%;
@@ -93,4 +97,34 @@ ul li:hover{
 }
 .deletebtn {
     color: red;
+}
+
+
+@media screen and (max-width:768px) {
+    .inputContainer{
+        width: 95%;
+      
+    }
+    .inputContainer input{
+        width: 100%;
+        font-size: 1rem;
+    }
+    button{
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 1rem;
+    }
+    
+    .listItems{
+        width: 100%;
+    }
+    
+ul li{
+    font-size: 1rem; 
+}
+#todolist{
+    width: 90%;
+    margin-inline: 1rem;
+}
+
 }
